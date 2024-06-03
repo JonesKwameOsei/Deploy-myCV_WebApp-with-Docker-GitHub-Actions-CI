@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\KWAME\\source\\repos\\myWebCVApp\\myWebCVApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB7955D4-2453-4A41-B514-CB2C3878F441}|myWebCVApp\\myWebCVApp.csproj|c:\\users\\kwame\\source\\repos\\mywebcvapp\\mywebcvapp\\mywebcvapp\\pages\\cv.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB7955D4-2453-4A41-B514-CB2C3878F441}|myWebCVApp\\myWebCVApp.csproj|solutionrelative:mywebcvapp\\pages\\cv.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB7955D4-2453-4A41-B514-CB2C3878F441}|myWebCVApp\\myWebCVApp.csproj|c:\\users\\kwame\\source\\repos\\mywebcvapp\\mywebcvapp\\mywebcvapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB7955D4-2453-4A41-B514-CB2C3878F441}|myWebCVApp\\myWebCVApp.csproj|solutionrelative:mywebcvapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB7955D4-2453-4A41-B514-CB2C3878F441}|myWebCVApp\\myWebCVApp.csproj|c:\\users\\kwame\\source\\repos\\mywebcvapp\\mywebcvapp\\mywebcvapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB7955D4-2453-4A41-B514-CB2C3878F441}|myWebCVApp\\myWebCVApp.csproj|solutionrelative:mywebcvapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB7955D4-2453-4A41-B514-CB2C3878F441}|myWebCVApp\\myWebCVApp.csproj|c:\\users\\kwame\\source\\repos\\mywebcvapp\\mywebcvapp\\mywebcvapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB7955D4-2453-4A41-B514-CB2C3878F441}|myWebCVApp\\myWebCVApp.csproj|solutionrelative:mywebcvapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\KWAME\\source\\repos\\myWebCVApp\\myWebCVApp\\myWebCVApp\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "myWebCVApp\\Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\KWAME\\source\\repos\\myWebCVApp\\myWebCVApp\\myWebCVApp\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "myWebCVApp\\Pages\\Privacy.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T01:24:21.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\KWAME\\source\\repos\\myWebCVApp\\myWebCVApp\\myWebCVApp\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "myWebCVApp\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\KWAME\\source\\repos\\myWebCVApp\\myWebCVApp\\myWebCVApp\\Pages\\Index.cshtml",
+              "RelativeToolTip": "myWebCVApp\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T12:54:41.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CV.cshtml",
+              "DocumentMoniker": "C:\\Users\\KWAME\\source\\repos\\myWebCVApp\\myWebCVApp\\myWebCVApp\\Pages\\CV.cshtml",
+              "RelativeDocumentMoniker": "myWebCVApp\\Pages\\CV.cshtml",
+              "ToolTip": "C:\\Users\\KWAME\\source\\repos\\myWebCVApp\\myWebCVApp\\myWebCVApp\\Pages\\CV.cshtml",
+              "RelativeToolTip": "myWebCVApp\\Pages\\CV.cshtml",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAIEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T17:41:25.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\KWAME\\source\\repos\\myWebCVApp\\myWebCVApp\\myWebCVApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "myWebCVApp\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\KWAME\\source\\repos\\myWebCVApp\\myWebCVApp\\myWebCVApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "myWebCVApp\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-31T17:46:34.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
