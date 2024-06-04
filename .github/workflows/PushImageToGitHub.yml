@@ -22,4 +22,4 @@ jobs:
         with:
           context: myWebCVApp/
           push: true
-          tags: kwameds/mycv_webapp:v1
+          tags: kwameds/mycv_webapp:2.0.0
