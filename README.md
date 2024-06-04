@@ -176,7 +176,7 @@ This approach is a best practice for managing credentials in the CI/CD pipelines
 |DOKERHUB_TOKEN|The access token generated|<p>
 
 The configuration should look like this:<p>
-![image](https://github.com/JonesKwameOsei/Build-Docker-Images-with-GitHub-Pipeline-Actions/assets/81886509/f7e19914-b23c-4671-9fa9-9b5461222a2c)<p>
+![alt text](image-1.png)<p>
 
 ### 6. Run the GitHub Actions Workflow
 
