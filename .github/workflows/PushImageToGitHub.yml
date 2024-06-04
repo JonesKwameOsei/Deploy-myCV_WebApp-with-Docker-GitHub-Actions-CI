@@ -20,6 +20,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: myWebCVApp/
+          context: .
           push: true
           tags: kwameds/mycv_webapp:2.0.0
