@@ -249,7 +249,7 @@ Verification from Docker Desktop:<p>
 
 Next, we will run the Docker Image Locally. This is to test the image locally to ensure it works correctly.
 ```
-docker run -d -p -- name mycvwebapp 8080:80 kwameds/mycvwebapp:1.0.0
+docker run -d -p -- name mycvwebapp 8080:8080 kwameds/mycvwebapp:1.0.0
 ```
 The application access at http://localhost:8080.<p>
 ![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/4a6a6940-c4a4-4442-b769-3e4c6fb7b2c3)<p>
@@ -267,6 +267,13 @@ Then push the image to Docker Hub:<p>
 ```
 docker push kwameds/mycvwebapp:1.0.0
 ```
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/4fd4e6f8-69b0-4601-9035-c3666c6c0c7f)<p>
+Imaged has been pushed successfully.<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/72e672ca-5841-4736-8927-11445b3d9702)<p>
+Let us get a confirmation from Docker Hub. <p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/39e8d72b-31a3-4f31-8909-e00a6764dea9)<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/8b55a231-7903-4357-bb6b-32dc18c0206c)<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/9b8f606a-c9ad-42dc-9d5c-7775dcc1b8a5)<p>
 
 
 ### 6. Run the GitHub Actions Workflow
