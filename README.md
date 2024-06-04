@@ -1,4 +1,4 @@
-# Build Docker Images with GitHub Actions
+# Build Docker Images with GitHub Actions For My CV WebApp
 ## Automatically build Docker images with GitHub Actions
 ![dockergithub](https://github.com/JonesKwameOsei/Build-Docker-Images-with-GitHub-Pipeline-Actions/assets/81886509/f4cc3521-f027-48b7-aa37-fd13f9321680)
 
@@ -8,7 +8,10 @@ This project demonstrates how to automatically build Docker images using GitHub 
 
 ## Step-by-Step Process
 
-### 1. Create a GitHub Repository
+### 1. Wep Application Development
+I developed the web application with the DotNet (.NET) SDK framework which is programmed in C# languaue. 
+
+### 2. Create a GitHub Repository
 Begin by creating a new GitHub repository for your project. This will be the central location for your code, configurations, and the GitHub Actions workflow.<p>
 1. Open a new terminal in VScode.
 2. Create a directory with a repo name you desire (named mine `Deploy-Webapp-with-Kubernetes`).
