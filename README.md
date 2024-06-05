@@ -9,7 +9,301 @@ This project demonstrates how to automatically build Docker images using GitHub 
 ## Step-by-Step Process
 
 ### 1. Wep Application Development
-I developed the web application with the DotNet (.NET) SDK framework which is programmed in C# languaue. 
+I developed the web application using `C#` the .NET SDK framework. Utilising thw ASP.NET for web application, I was able to build this simple web application for my CV. In efficiently created this simple CV web application using the ASP.NET Core Razor pages. The steps are listed below:<p>
+**Step One: Create a New ASP.NET Core Project**
+- Open Visual Studio. Download it [here.](https://visualstudio.microsoft.com/thank-you-downloading-visualstudio/sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false).
+- Select "Create a new project".
+- Select "ASP.NET Core Web App" and click "Next".
+- Configure the project details and click "Create".
+- Select ".NET 8.0 (or later)" and click "Create".<p>
+
+**Step Two: Set Up the Layout**
+- In the Pages folder, modify the `Shared/_Layout.cshtml` file to include a background of your choice. I chose to go with a dark background and link to the CSS.
+- Add `class="bg-dark text-white"` to the open body tag to look like this:<p>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - My CV</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body class="bg-dark text-white">           # This is where to modify the background colour
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+```
+**Step Three: Create the CV Page**
+- Add a new Razor Page to the Pages folder named CV.cshtml.
+```
+@page
+@model Pages_CV
+@{
+    ViewData["Title"] = "My CV";
+}
+
+<div class="cv">
+    <div class="header text-center">
+        <img src="~/images/profile.png" class="profile-img" alt="Profile Photo" />
+        <h1>Jones Osei</h1>
+        <p>DevOps Engineer</p>
+        <p>
+            <a href="mailto:oseikwamejones@gmail.com" class="text-email">oseikwamejones@gmail.com</a> |
+            <a href="tel:+44 7943 645 460" class="text-phone">+44 7943 645 460</a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/kwameds/" class="text-linkedin">LinkedIn</a> |
+            <a href="https://github.com/JonesKwameOsei" class="text-github">GitHub</a>
+        </p>
+    </div>
+    <div class="content">
+        <section>
+            <h2><u>Professional Summary</u></h2>
+            <p>
+                A DevOps Engineer with hands-on experience of containerising applications with Docker ensuring maximum security and performance optimisation.
+                Utilised Helm and Kubernetes to orchestrate containers with 98% High Availability synchronization and 99% full security features. 
+                Provisioned secured and scalable infrastructure in the cloud. 
+            </p>
+        </section>
+        <section>
+            <h2><u>Professional Experience</u></h2>
+            <div class="experience">
+                <h3>DevOps Consultant</h3>
+                <p class="company">Jomacs IT Consult, Birmingham, UK</p>
+                <p class="dates">June 2023 - Present</p>
+                <ul>
+                    <li>Implemented an automated deployment pipeline using Git, Jenkins, and Docker, reducing deployment time by 50% and increasing release frequency by 75%.</li>
+                    <li>Orchestrated a Kubernetes cluster for a production environment, improving scalability and resource utilization, leading to a 30% reduction in infrastructure costs.</li>
+                    <li>Developed and maintained a comprehensive CI/CD pipeline using Jenkins, Maven, and Git, resulting in a 90% reduction in manual build and deployment processes.</li>
+                    <li>Implemented infrastructure as code using CloudFormation and Terraform to provision AWS resources such as EC2 instances, S3 buckets, and RDS databases, resulting in a 57% reduction in maintenance costs.</li>
+                    <li>Applied automated testing to ensure continuous service availability using AWS Lambda and Amazon CloudWatch alarms.</li>
+                    <li>Performed project monitoring, tracking, and reporting with Grafana and Prometheus.</li>
+                </ul>
+                <p><strong>Achievements:</strong></p>
+                <ul>
+                    <li>Automated integration and deployment processes, eliminating human error by 99% resulting in a 90% reduction in manual build and deployment processes.</li>
+                    <li>Increased continuous delivery and deployment speed by 75% and leading to a 30% reduction in infrastructure costs.</li>
+                    <li>Automated planned and exploratory tests, improving release quality by 69%.</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>DevOps Engineer</h3>
+                <p class="company">Dunwell Health Service, Birmingham, UK</p>
+                <p class="dates">January 2022 - June 2023</p>
+                <ul>
+                    <li>Packaged and built applications with Maven, NPM, Python, and NuGet, managing them with Azure Artifacts.</li>
+                    <li>Dockerized and deployed applications to Azure Kubernetes Services (AKS).</li>
+                    <li>Utilized Azure Pipelines to create continuous integration and continuous deployment pipelines from scratch.</li>
+                    <li>Used Terraform to provision infrastructure and resources in Microsoft Azure Cloud.</li>
+                    <li>Performed project monitoring, tracking, and reporting with Azure Boards.</li>
+                </ul>
+                <p><strong>Achievements:</strong></p>
+                <ul>
+                    <li>Automated build processes, eliminating human error by 98%.</li>
+                    <li>Increased continuous delivery and deployment speed by 72%.</li>
+                    <li>Automated planned and exploratory tests, improving release quality by 69%.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Master of Science, Data Science</strong><br />
+                    University of Gloucestershire, United Kingdom
+                </li>
+                <li>
+                    <strong>Bachelor of Education, Educational Psychology</strong><br />
+                    University of Cape Coast, Ghana
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>Microsoft Certified: Azure Data Fundamentals</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Linux</li>
+                <li>Python</li>
+                <li>Go</li>
+                <li>Bashscripting</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Helm</li>
+                <li>Terraform</li>
+                <li>Ansible</li>
+                <li>Git and GitHub</li>
+                <li>Jenkins CI</li>
+                <li>AWS Cloud Services</li>
+                <li>Azure Cloud Services</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Super-Mario-Deployment-on-AWS-EKS-with-using-Terraform-Kubernetes</strong><br />
+                    <p>
+                        The deployment of the popular game Super Mario on Amazon Elastic Kubernetes Service (EKS) using Terraform and Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+                    </p>
+                    <p>
+                        <a href="https://github.com/JonesKwameOsei/Super-Mario-Deployment-on-AWS-EKS-with-using-Terraform-Kubernetes" class="text-project-link">Project Link</a>
+                    </p>
+                </li>
+                <li>
+                    <strong>Deploying an Online Boutique Web Application with Kubernetes</strong><br />
+                    <p>
+                        Deploy an online shopping application with Kubernetes.
+                    </p>
+                    <p>
+                        <a href="https://github.com/JonesKwameOsei/Deploy-Webapp-with-Kubernetes" class="text-project-link">Project Link</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact Information</h2>
+            <p>
+                Email: <a href="mailto:oseikwamejones@gmail.com" class="text-email">oseikwamejones@gmail.com</a><br />
+                Phone: <a href="tel:+44 7943 645 460" class="text-phone">+44 7943 645 460</a><br />
+                LinkedIn: <a href="https://www.linkedin.com/in/kwameds/" class="text-linkedin">https://www.linkedin.com/in/kwameds/</a><br />
+                GitHub: <a href="https://github.com/JonesKwameOsei" class="text-github">https://github.com/JonesKwameOsei</a>
+            </p>
+        </section>
+    </div>
+</div>
+```
+
+**Step 4: Add CSS for Styling**
+- In the wwwroot/css/site.css file, add the following CSS to style the CV page:
+```
+/* Formatting the web pages */
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Style the visible content */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.cv {
+    padding: 20px;
+    background-color: #2c2c2c;
+    color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #00bfff;
+}
+
+.content section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: circle;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a.text-light {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+a.text-light:hover {
+    text-decoration: underline;
+}
+
+a.text-email {
+    color: #0e76a8; /* LinkedIn blue color */
+}
+
+a.text-phone {
+    color: #0e76a8; /* LinkedIn blue color */
+}
+
+a.text-linkedin {
+    color: #0e76a8; /* LinkedIn blue color */
+}
+
+a.text-github {
+    color: #0e76a8; /* LinkedIn blue color */
+}
+
+a.text-project-link {
+    color: #00bfff; /* Light blue for project links */
+    text-decoration: none;
+}
+a.text-project-link:hover {
+   text-decoration: underline;
+}
+.experience {
+    margin-bottom: 20px;
+}
+.company {
+    font-style: italic;
+    color: #cccccc;
+}
+.dates {
+    font-weight: bold;
+    color: #999999;
+}
+```
+**Step 5: Run the Application**
+- To run the application, press F5 or click the "Run" button in Visual Studio.In the browser, Navigate to /CV (localhost:home/cv) to view the CV page.
 
 ### 2. Create a GitHub Repository
 Begin by creating a new GitHub repository for your project. This will be the central location for your code, configurations, and the GitHub Actions workflow.<p>
@@ -40,7 +334,7 @@ git remote add origin https://github.com/<github-username>/<repo-name>.git
 ```
 For step by step process of creating a github repo from thr terminal, check this [project](https://github.com/JonesKwameOsei/Deploy-Webapp-with-Kubernetes)
 
-### 2. Set Up Dockerfile:
+### 3. Set Up Dockerfile:
 Create a `Dockerfile` in the root directory of your `ASP.NET` web application. 
 - Create a file called Dockerfile.
 ```
@@ -54,7 +348,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
 EXPOSE 8080
-EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
@@ -93,7 +386,7 @@ ENTRYPOINT ["dotnet", "myWebCVApp.dll"]
 
 </Project>
 ```
-### 3. Set up the Docker Build Workflow
+### 4. Set up the Docker Build Workflow
 In the GitHub repository, create a new folder named `.github/workflows`. This is where the GitHub Actions workflow is defined.
 
 Inside the `workflows` folder, create a new file named `dockerhub-push.yml`. This file will contain the configuration for the Docker build workflow.
@@ -128,7 +421,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: kwameds/mycvwebapp:1.0.0
+          tags: kwameds/mycvwebapp:2.0.0
 ```
 
 This workflow will be triggered on push and pull request events to the `main` branch. It performs the following steps:
@@ -138,7 +431,7 @@ This workflow will be triggered on push and pull request events to the `main` br
 3. Logs in to the GitHub Container Registry (ghcr.io) using the `GITHUB_TOKEN` secret.
 4. Builds the Docker image and pushes it to the GitHub Container Registry, tagging it with the current commit SHA.
 
-### 4. Generate Docker Hub Access Token
+### 5. Generate Docker Hub Access Token
 The need for a Docker Hub access token when using GitHub Actions to build and push Docker images is related to authentication and authorization.
 When you want to push a Docker image to a registry, such as Docker Hub, the registry needs to verify that you have the necessary permissions to do so. This is where the access token comes into play.
 Here are the key reasons why you need a Docker Hub access token for GitHub Actions:
@@ -165,7 +458,7 @@ This approach is a best practice for managing credentials in the CI/CD pipelines
 - Copy the token generated and close the pane. <p>
 ![image](https://github.com/JonesKwameOsei/Build-Docker-Images-with-GitHub-Pipeline-Actions/assets/81886509/d3207ccd-ca38-476c-9949-c0ee064c94ae)<p>
 
-### 5. Store Secrets in Github Actions
+### 6. Store Secrets in Github Actions
 1. In the Github repo, click on settings.
 2. On the left silde, find `Secrets and Variables`, click the dropdown and select `Actions`.
 ![image](https://github.com/JonesKwameOsei/Build-Docker-Images-with-GitHub-Pipeline-Actions/assets/81886509/9ec60cc6-8df0-4905-a16d-76f78d180c87)<p>
@@ -180,7 +473,7 @@ This approach is a best practice for managing credentials in the CI/CD pipelines
 The configuration should look like this:<p>
 ![alt text](image-1.png)<p>
 
-### 6. Manually build and Push the Docker Image Locally
+### 7. Manually build and Push the Docker Image Locally
 Open a terminal, navigate to the directory containing the Dockerfile, and build the Docker image.
 ```
 docker build -t kwameds/mycvwebapp:1.0.0 .
@@ -279,7 +572,7 @@ Let us get a confirmation from Docker Hub. <p>
 ![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/9b8f606a-c9ad-42dc-9d5c-7775dcc1b8a5)<p>
 
 
-### 6. Run the GitHub Actions Workflow
+### 7. Run the GitHub Actions Workflow
 
 2. Add the changes and commit
 ```
@@ -303,6 +596,31 @@ GitHub action completed. We will confirm if the the image is in the `Docker Hub`
 Image in docker hub.<p>
 ![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/24ab17e0-045b-43de-a8a6-e85a8f123690)<p>
 ![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/9cac5376-ae6d-4454-9a9e-78a9b6f2689d)<p>
+
+### Test the New Image
+Having automatically build and pushed the image to Docker Hub, it is important to run the application to verify if it is working. Run:
+```
+docker run -d -p 8081:8080 --name newCVapp kwameds/mycv_webapp:2.0.0
+```
+Docker pulled the image from my repo in the Docker Hub registry as it couldn't find the image locally. Docker goes ahead to run a container based on that image. The `-d` option runs the container in detached mode, `-p 8081:8080` maps the `host's port 8081` to the `container's port 8080`, and `--name newCVapp` assigns the name **newCVapp** to the container.<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/6c4c691c-ba28-4537-8762-a3a93288a4f9)<p>
+Let us confirm if the image is now in our local registry by running:
+```
+docker images        # lists all images
+docker ps            # lists containers running
+```
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/8167e1df-968e-4061-ab5d-28df771662ae)<p>
+Next, We will view the web app in the browser by typing: `http://localhost:8081`. <p>
+The web page is accessible: <p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/47d9669b-6966-44b3-a3ce-d10e15f1267a)<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/b12bf5b8-014e-4427-8c97-5cd0fb8f11a4)<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/8c838419-cf0d-4efe-ad53-94175172cb28)<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/77142a96-8f4f-4f29-9399-f59889ffe369)<p>
+
+### Modify the codebase and Apply Continous Integration to Build and Push Updates
+The web app has been tested and it is working as expected. However, there there are some updates that needs to be done. In the privacy page, it can be observed that the point no.6 states the website may have external links. This needs to be updated because there are no external links. <p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/59bae05c-d927-467b-b6d3-a8ceaa73bded)
+
 
 ## Conclusion
 In this project, I have demonstrated how to utilised continuous integration in the software development circle. I also leveraged on my programming abilities to develop my web application with `Microsoft .NET SDK` written in `C#`. This was done with `Microsoft Visual Studio`. I have seamlessly integrated Docker into a development pipeline. This approach allow **DevOps Enginees** to automatically build and push Docker images to a registry, ensuring that the deployments are consistent and up-to-date with the latest changes to the codebase. This setup provides a reliable and efficient way to manage the Docker-based applications.
