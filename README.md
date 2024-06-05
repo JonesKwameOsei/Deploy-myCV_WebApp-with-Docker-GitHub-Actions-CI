@@ -1,4 +1,4 @@
-# Build Docker Images with GitHub Actions For My CV WebApp
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/81685500-5b86-4ef2-9254-1219d11d2930)![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/81685500-5b86-4ef2-9254-1219d11d2930)![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/81685500-5b86-4ef2-9254-1219d11d2930)# Build Docker Images with GitHub Actions For My CV WebApp
 ## Automatically build Docker images with GitHub Actions
 ![dockergithub](https://github.com/JonesKwameOsei/Build-Docker-Images-with-GitHub-Pipeline-Actions/assets/81886509/f4cc3521-f027-48b7-aa37-fd13f9321680)
 
@@ -471,7 +471,8 @@ This approach is a best practice for managing credentials in the CI/CD pipelines
 |DOKERHUB_TOKEN|The access token generated|<p>
 
 The configuration should look like this:<p>
-![alt text](image-1.png)<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/6a086163-3d3a-48ca-943e-4619cb11a45c)
+<p>
 
 ### 7. Manually build and Push the Docker Image Locally
 Open a terminal, navigate to the directory containing the Dockerfile, and build the Docker image.
