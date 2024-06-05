@@ -1,4 +1,4 @@
-![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/81685500-5b86-4ef2-9254-1219d11d2930)![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/81685500-5b86-4ef2-9254-1219d11d2930)![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/81685500-5b86-4ef2-9254-1219d11d2930)# Build Docker Images with GitHub Actions For My CV WebApp
+Build Docker Images with GitHub Actions For My CV WebApp
 ## Automatically build Docker images with GitHub Actions
 ![dockergithub](https://github.com/JonesKwameOsei/Build-Docker-Images-with-GitHub-Pipeline-Actions/assets/81886509/f4cc3521-f027-48b7-aa37-fd13f9321680)
 
@@ -471,8 +471,7 @@ This approach is a best practice for managing credentials in the CI/CD pipelines
 |DOKERHUB_TOKEN|The access token generated|<p>
 
 The configuration should look like this:<p>
-![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/6a086163-3d3a-48ca-943e-4619cb11a45c)
-<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/6a086163-3d3a-48ca-943e-4619cb11a45c)<p>
 
 ### 7. Manually build and Push the Docker Image Locally
 Open a terminal, navigate to the directory containing the Dockerfile, and build the Docker image.
@@ -630,7 +629,7 @@ Run image and view in the browser to confirm the update. <p>
 docker run -d -p 8082:8080 --name UpdatedCVapp kwameds/mycv_webapp:2.1.0
 ```
 Image pulled and container created:<p>
-![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/e170f176-b4af-45a2-9355-779c038e7ad7)<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/765b4ff1-bca7-46c8-bc51-f220087486e6)<p>
 ![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/ea675287-6af5-4282-8765-1dcf10f6742b)<p>
 
 The web application is accessible:<p>
