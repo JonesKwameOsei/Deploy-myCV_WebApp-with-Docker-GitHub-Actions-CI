@@ -292,12 +292,17 @@ git push origin main
 ```
 Commit and push the changes to the `main` branch of your GitHub repository. This will trigger the `docker-build.yml` workflow, which will automatically build and push your Docker image to the GitHub Container Registry.In the "Actions" tab of the GitHub repository, we can monitor the progress and check the status of the workflow run.<p>
 
-The pipeline action is running.<p>
-![image](https://github.com/JonesKwameOsei/Build-Docker-Images-with-GitHub-Pipeline-Actions/assets/81886509/defd6bd1-a3ed-43bd-ad0d-0fcf54bc39f4)<p>
-GitHub action completed.We will confirm if the the image is in the `Docker Hub` registry. 
-![image](https://github.com/JonesKwameOsei/Build-Docker-Images-with-GitHub-Pipeline-Actions/assets/81886509/76437dc2-b45f-459f-870e-2b2a83a0207a)<p>
+The pipeline actions has been executed:<p>
+![workflow1](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/17403ab6-559a-44f7-9c19-3cb3b811fa2e)<p>
+![workflow2](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/34de5e66-5437-496c-a152-8d43a3a8f7ac)<p>
+![workflow3](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/c6e5832e-7bd7-4f28-8f9c-68e69f7d0839)<p>
+![workflow4](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/e619c1ed-babf-406e-ba62-6361563817ad)<p>
+
+GitHub action completed. We will confirm if the the image is in the `Docker Hub` registry. 
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/0e101d3d-c3e3-4929-81b2-146142fb0108)<p>
 Image in docker hub.<p>
-![image](https://github.com/JonesKwameOsei/Build-Docker-Images-with-GitHub-Pipeline-Actions/assets/81886509/ee0d34c9-9c9f-4a12-a4cc-3449458f3050)
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/24ab17e0-045b-43de-a8a6-e85a8f123690)<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/9cac5376-ae6d-4454-9a9e-78a9b6f2689d)<p>
 
 ## Conclusion
-By leveraging GitHub Actions, I have seamlessly integrated Docker into a development pipeline. This approach allow us to automatically build and push Docker images to a registry, ensuring that the deployments are consistent and up-to-date with the latest changes to the codebase. This setup provides a reliable and efficient way to manage the Docker-based applications.
+In this project, I have demonstrated how to utilised continuous integration in the software development circle. I also leveraged on my programming abilities to develop my web application with `Microsoft .NET SDK` written in `C#`. This was done with `Microsoft Visual Studio`. I have seamlessly integrated Docker into a development pipeline. This approach allow **DevOps Enginees** to automatically build and push Docker images to a registry, ensuring that the deployments are consistent and up-to-date with the latest changes to the codebase. This setup provides a reliable and efficient way to manage the Docker-based applications.
