@@ -619,8 +619,23 @@ The web page is accessible: <p>
 
 ### Modify the codebase and Apply Continous Integration to Build and Push Updates
 The web app has been tested and it is working as expected. However, there there are some updates that needs to be done. In the privacy page, it can be observed that the point no.6 states the website may have external links. This needs to be updated because there are no external links. <p>
-![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/59bae05c-d927-467b-b6d3-a8ceaa73bded)
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/59bae05c-d927-467b-b6d3-a8ceaa73bded)<p>
+Privacy policy updated and the continuous integration pipeline executed.<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/c75148d0-8a15-413d-8c7f-30ef3daf13ac)<p>
+Image pushed to my repo in Docker Hub regisry.<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/b7fc0072-f5f7-4d41-8ed9-f8c7e1ab2809)<p>
+Run image and view in the browser to confirm the update. <p> 
+```
+docker run -d -p 8082:8080 --name UpdatedCVapp kwameds/mycv_webapp:2.1.0
+```
+Image pulled and container created:<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/e170f176-b4af-45a2-9355-779c038e7ad7)<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/ea675287-6af5-4282-8765-1dcf10f6742b)<p>
 
+The web application is accessible:<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/24d90a1d-d589-404e-9540-6916e7097c61)<p>
+Privacy policy is updated:<p>
+![image](https://github.com/JonesKwameOsei/myCV_WebApp/assets/81886509/6f55f56c-e9f1-430f-9030-f24d354c97ed)<p>
 
 ## Conclusion
 In this project, I have demonstrated how to utilised continuous integration in the software development circle. I also leveraged on my programming abilities to develop my web application with `Microsoft .NET SDK` written in `C#`. This was done with `Microsoft Visual Studio`. I have seamlessly integrated Docker into a development pipeline. This approach allow **DevOps Enginees** to automatically build and push Docker images to a registry, ensuring that the deployments are consistent and up-to-date with the latest changes to the codebase. This setup provides a reliable and efficient way to manage the Docker-based applications.
